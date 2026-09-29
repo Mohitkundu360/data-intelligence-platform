@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  background: #f6f7f9;
+}
+
+body {
+  @apply min-h-screen bg-paper text-ink antialiased;
+}
+
+::selection {
+  background: #e7ecf8;
+  color: #2447a8;
+}
+
+:focus-visible {
+  outline: 2px solid #2447a8;
+  outline-offset: 2px;
+}
+
+button,
+a,
+input,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
